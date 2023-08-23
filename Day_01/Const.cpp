@@ -2,6 +2,9 @@
 
 using namespace std;
 
+
+//C++中对于const常量不一定分配存储空间，当const常量为全局常量并需要在其他文件中使用或对const常量进行&取地址时才会分配存储空间
+
 int main()
 {
 	//int* z = 0;
