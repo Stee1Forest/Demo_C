@@ -8,7 +8,7 @@
 //	int age;
 //};
 //
-////CÓïÑÔÊµÏÖÖ¸ÕëµÄ¼ä½Ó¸³Öµ
+////Cè¯­è¨€å®ç°æŒ‡é’ˆçš„é—´æ¥èµ‹å€¼
 //int getTeacher(Teacher** p)
 //{
 //	Teacher* tmp = NULL;
@@ -28,7 +28,7 @@
 //	return 0;
 //}
 //
-////C++ÒıÓÃÊµÏÖÖ¸ÕëµÄ¼ä½Ó¸³Öµ
+////C++å¼•ç”¨å®ç°æŒ‡é’ˆçš„é—´æ¥èµ‹å€¼
 //int getTeacher2(Teacher*& p)
 //{
 //	p = (Teacher*)malloc(sizeof(Teacher));
