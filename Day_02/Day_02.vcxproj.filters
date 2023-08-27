@@ -15,7 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Reference.cpp">
+    <ClCompile Include="Pointer_Reference.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Const_Reference.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
