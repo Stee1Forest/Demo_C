@@ -2,7 +2,6 @@
 #include <cmath>
 
 using namespace std;
-
 //Struct 关键字其中成员默认是public
 struct Test
 {
