@@ -11,7 +11,7 @@ using namespace std;
 inline void printA()
 {
     int a = 10;
-    cout <<"a : " << endl;
+    cout <<"a : " << a << endl;
 }
 
 
@@ -19,5 +19,6 @@ int main()
 {
     printA();
     cout << "Hello" << endl;
+    system("pause");
     return 0;
 }
