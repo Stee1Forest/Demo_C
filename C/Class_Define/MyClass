@@ -1,0 +1,22 @@
+#pragma once
+#ifndef _MyClass
+#define _MyClass
+#include <iostream>
+
+class MyClass
+{
+
+public:
+    void setRadius(int r);
+    double getArea();
+    int getRadius();
+
+protected:
+
+private:
+    int radius;
+    int area;
+    
+};
+
+#endif
