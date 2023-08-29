@@ -1,0 +1,26 @@
+#pragma once
+#ifndef _CIRCLE_
+#define _CIRCLE_
+
+//声明一个Circle类
+class Circle
+{
+
+public:
+    void setCoordinate(int x, int y);   //声明一个设置圆心坐标的方法
+    void setRadius(int r);              //声明一个设置圆半径的方法
+    double getArea();                   //声明一个得到圆面积的方法
+    double getHorizontal();             //声明一个得到圆心横坐标的方法
+    double getVertical();               //声明一个的到圆心纵坐标的方法
+    double getRadius();                 //声明一个得到圆半径的方法
+protected:
+
+private:
+    double horizontal;                  //圆心的横坐标
+    double vertical;                    //圆心的纵坐标
+    double radius;                      //圆的半径
+    double area;                        //圆的面积
+    void setArea();                     //声明一个设置圆的面积的方法，该方法在每次查询面积的时候调用
+};
+
+#endif

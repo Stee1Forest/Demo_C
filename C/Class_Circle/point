@@ -1,0 +1,24 @@
+#pragma once
+#ifndef _POINT_
+#define _POINT_
+
+#include "circle"
+
+//声明一个Point类
+class Point
+{
+
+public:
+    void setPoint(int x, int y);            //声明一个设置点坐标的方法
+    double getHorizontal();                 //声明一个获取点横坐标的方法
+    double getVertical();                   //声明一个获取点纵坐标的方法
+    int isInCircle(Circle &circle);        //声明一个成员函数，判断点是否在圆内部
+protected:
+
+private:
+    double horizontal;                      //点的横坐标
+    double vertical;                        //点的纵坐标
+};
+
+
+#endif
