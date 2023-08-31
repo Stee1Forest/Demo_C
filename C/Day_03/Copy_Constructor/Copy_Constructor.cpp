@@ -105,7 +105,7 @@ void printLocation(Point point)
 
 //Point unknown()
 //{
-//    Point known(1, 2);      //
+//    Point known(1, 2);      //优化:
 //    return known;           //如果返回的对象没有用途，这个对象会被析构,如果是作为赋值，会在赋值结束后析构，如果作为另一个对象的初始化，则会直接转变成该对象
 //}
 
