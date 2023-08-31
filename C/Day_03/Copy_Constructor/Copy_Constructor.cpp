@@ -50,6 +50,9 @@ class Point
 {
 
 public:
+    Point()
+    {
+    }
     Point(int ho, int ve)
     {
         this->horizon = ho;
@@ -100,12 +103,20 @@ void printLocation(Point point)
     cout << "Horizon = " << point.getHorizon() << ", Vertical = " << point.getVertical() << endl;
 }
 
+//Point unknown()
+//{
+//    Point known(1, 2);      //
+//    return known;           //如果返回的对象没有用途，这个对象会被析构,如果是作为赋值，会在赋值结束后析构，如果作为另一个对象的初始化，则会直接转变成该对象
+//}
+
 void playLocation()
 {
     Point p1(1, 2);                 //调用有参构造函数
     Point p2 = p1;                  //调用拷贝构造函数
-    Point p3 = Point(3, 4);         //匿名对象使用有参构造函数进行创建，完成后将匿名对象变成p3，即类似于p3调用了=后边的构造函数完成了构造
-    
+    //Point p3;                     //这里声明一个p3，调用无参构造函数完成构造
+    //p3 = Point(3, 4);             //Point(3, 4)会创建一个匿名对象并且使用对应的构造函数进行构造，由于p3已经完成了初始化，因此在赋值完成后该匿名对象会析构
+    Point p3 = Point(3, 4);         //匿名对象使用有参构造函数进行创建，完成后将匿名对象转正成p3，即类似于p3调用了=后边的构造函数完成了构造
+    //Point p4 = unknown();
     printLocation(p2);              //形参调用了拷贝构造函数，用p2去初始化形参
 }
 
