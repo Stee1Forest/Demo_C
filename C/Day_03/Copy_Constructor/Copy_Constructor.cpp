@@ -48,9 +48,9 @@ private:
 
 class Point
 {
-
+//默认拷贝构造函数成员变量进行简单赋值
 public:
-    Point()
+    Point()             //当类中定义了任何构造函数，编译器不会提供无参构造函数
     {
     }
     Point(int ho, int ve)
