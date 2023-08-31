@@ -46,9 +46,44 @@ private:
     int m_b;
 };
 
+class Point
+{
+
+public:
+    Point(int ho, int ve)
+    {
+        this->horizon = ho;
+        this->vertical = ve;
+        cout << "这是有参构造函数" << endl;
+    }
+    Point(const Point &point)
+    {
+        this->horizon = point.horizon;
+        this->vertical = point.vertical;
+        cout << "这是有参拷贝构造函数" << endl;
+    }
+    ~Point()
+    {
+        cout << "这是析构函数，point已销毁" << endl; 
+    }
+    int getHorizon()
+    {
+        return this->horizon;
+    }
+    int getVertical()
+    {
+        return this->vertical;
+    }
+protected:
+
+private:
+    int horizon;
+    int vertical;
+};
+
 //赋值构造函数：用一个对象去初始化另外一个对象
 
-int main()
+int main1()
 {
     Constructor t1(1, 2);
     Constructor t3(1);
@@ -57,5 +92,25 @@ int main()
     t3 = t1;                    //这里的 = 为赋值
 
     system("pause");
+    return 0;
+}
+
+void printLocation(Point point)
+{
+    cout << "Horizon = " << point.getHorizon() << ", Vertical = " << point.getVertical() << endl;
+}
+
+void playLocation()
+{
+    Point p1(1, 2);                 //调用有参构造函数
+    Point p2 = p1;                  //调用拷贝构造函数
+    Point p3 = Point(3, 4);         //匿名对象使用有参构造函数进行创建，完成后将匿名对象变成p3，即类似于p3调用了=后边的构造函数完成了构造
+    
+    printLocation(p2);              //形参调用了拷贝构造函数，用p2去初始化形参
+}
+
+int main()
+{
+    playLocation();
     return 0;
 }
