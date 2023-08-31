@@ -10,8 +10,8 @@
                 "${fileDirname}\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-finput-charset=UTF-8",
-                "-fexec-charset=UTF-8"
+                //"-finput-charset=UTF-8",
+                //"-fexec-charset=UTF-8"
             ],
             "options": {
                 "cwd": "${fileDirname}"
