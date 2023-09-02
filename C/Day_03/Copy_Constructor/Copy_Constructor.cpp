@@ -123,7 +123,7 @@ void playLocation()
     printLocation(p2);              //形参调用了拷贝构造函数，用p2去初始化形参
 }
 
-int main()
+int main12()
 {
     playLocation();
     return 0;
