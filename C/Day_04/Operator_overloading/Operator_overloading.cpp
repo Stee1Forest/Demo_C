@@ -39,7 +39,7 @@ Complex operator+(const Complex &c1, const Complex &c2)
     return tmp;
 }
 
-int main()
+int main·1()
 {
     Complex c1(1,2), c2(2,3);
 
