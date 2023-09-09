@@ -36,8 +36,11 @@ int main()
 
     //重载<< >>运算符
     MyString str4;
+    cout << "str4.lenth = " << str4.getlength() << endl;
+    cout << "str4.pointer = " << str4 << endl;
     cin >> str4;
-    cout << str4 << endl;
+    cout << "str4.lenth = " << str4.getlength() << endl;
+    cout << "str4.pointer = " << str4 << endl;
     system("pause");
     return 0;
 }
