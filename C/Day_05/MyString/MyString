@@ -1,0 +1,48 @@
+#pragma once
+#ifndef _MYSTRING_
+#define _MYSTRING_
+
+using namespace std;
+
+class MyString
+{
+
+public:
+    MyString();
+    MyString(const char * p);
+    MyString(const MyString& str);
+    MyString& operator=(const MyString& str);
+    MyString& operator=(const char* p);
+    char& operator[](int index);
+    bool operator==(const char *p) const;
+	bool operator==(const MyString& str) const;
+	bool operator!=(const char *p) const;
+	bool operator!=(const MyString& str) const;
+    int operator<(const MyString& str) const;
+    int operator>(const MyString& str) const;
+    int operator<(const char *p) const;
+    int operator>(const char *p) const;
+    ~MyString();
+    friend ostream& operator<<(ostream& out, MyString& str);
+    friend istream& operator>>(istream& in, MyString& str);
+
+    char *c_str()
+	{
+		return pointer;
+	}
+	const char *c_str2()
+	{
+		return pointer;
+	}
+	int getlength()
+	{
+		return lenth;
+	}
+protected:
+
+private:
+    int lenth;
+    char * pointer;
+};
+
+#endif
